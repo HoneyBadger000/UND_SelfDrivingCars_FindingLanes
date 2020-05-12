@@ -42,6 +42,7 @@ My pipeline consisted of 5 steps.
 5. Filter and process lines from hough transform.
 	Here, I first filtered out bad lines by rejecting slopes that indicate too horizontal or too vertical lines.
 	then i sorted the lines based on the largest length. I then used these sorted lines to find two lines that have similar slope but in opposite signs.
+	
 	![alt text][image4]
 	
 
