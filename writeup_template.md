@@ -25,11 +25,10 @@ My pipeline consisted of 5 steps.
 	![alt text][image3]	
 4. Hough transform to find lines , I used 
     rho = 1, theta = np.pi/180 , threshold = 20, min_line_len = 180, max_line_gap = 90
-	![alt text][image4]
 5. Filter and process lines from hough transform.
 	Here, I first filtered out bad lines by rejecting slopes that indicate too horizontal or too vertical lines.
 	then i sorted the lines based on the largest length. I then used these sorted lines to find two lines, that have similar slope but in opposite signs.
-	![alt text][image5]
+	![alt text][image4]
 	
 
 ### 2. Identify potential shortcomings with your current pipeline
