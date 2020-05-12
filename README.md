@@ -2,10 +2,17 @@
 
 **Finding Lane Lines on the Road**
 
+NOTE:
+
+If you face problems loading the 
+Try to open that notebook that you want using nbviewer online, you don't need to install it.
+
+Open "https://nbviewer.jupyter.org/"
+Paste the link to the notebook, on the abolve site.
+
 The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
-
 
 [//]: # (Image References)
 
@@ -40,14 +47,13 @@ My pipeline consisted of 5 steps.
 
 ### 2. Identify potential shortcomings with your current pipeline
 
+Potential shortcomings of current pipeline:
 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
+1. the algorithm is not efficient when the image contains shadows
+2. the algorithm fails to detect lines when the image contains curvatures, in this aspect the region of interest can be made more efficient
+3. the algorithm currently relies on the length of the lines found which is not fool proof
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+A possible improvement would be to make the algorithm iterative, to look for the best two lines
